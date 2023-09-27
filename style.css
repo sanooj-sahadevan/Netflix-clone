@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #f4f0f0;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:url("header-image.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: 100px;
+
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-singup{
+    background: #f0e6e6;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-singup input{
+    flex: 1px;
+    border: 7px;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-singup button{
+    background: #f53939;
+    border: 0;
+    outline: 0;
+    color: #282424;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+
+}
+.feautures{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-left: 20%;
+
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.faq{
+     padding: 10px 12%;
+     text-align: center;
+     font-size: 18px;
+}
+.faq h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+.accordian{
+    margin: 100px auto;
+    width: 100%;
+    max-width: 2550px;
+    height: 500px;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 8px;
+    
+
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #302e2e;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+
+
+.accordian .content{
+    background: #504d4d;
+     text-align: left;
+     padding: 0 20px;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.5s, padding 0.5s ;
+
+}
+.accordian input[type="radio"]:checked + label + .content {
+     max-height: 600px;
+     padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.feg .email-singup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 13px;
+}
+.faq .email-singup{
+    max-width: 500px;
+    margin: 20px auto 60px;
+    
+
+}
+.faq small{
+    font-size: 22px;
+}
+.footer{
+    padding: 50px 30% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer ,.language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+
+}
+.footer .copy{
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+
